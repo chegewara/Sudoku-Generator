@@ -19,9 +19,10 @@ string Sudoku::getGrid()
 
 
 // START: Generate random number
+extern "C" uint32_t esp_random(void);
 int genRandNum(int maxLimit)
 {
-  return rand()%maxLimit;
+	return esp_random() % maxLimit;
 }
 // END: Generate random number
 

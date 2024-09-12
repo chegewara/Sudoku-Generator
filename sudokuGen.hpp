@@ -10,7 +10,7 @@
 #define UNASSIGNED 0
 
 class Sudoku {
-private:
+protected:
   int grid[9][9];
   int solnGrid[9][9];
   int guessNum[9];
